@@ -148,7 +148,28 @@
   /* HEADER */
   .header {
     text-align: center;
-    padding: 80px 0 72px;
+    padding: 150px 0 140px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header .container { position: relative; z-index: 1; max-width: 340px; }
+  .header-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 440px;
+    height: 440px;
+    max-width: 88vw;
+    max-height: 88vw;
+    border: 1px solid rgba(246, 238, 243, 0.16);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(85, 26, 59, 0.14) 0%, transparent 70%);
+  }
+  @media (max-width: 520px) {
+    .header .container { max-width: 270px; }
+    .header .label { margin-bottom: 20px; }
   }
   .header .label {
     font-family: 'Inter', sans-serif;
@@ -404,6 +425,7 @@
 <main>
 
   <header class="header">
+    <div class="header-ring" aria-hidden="true"></div>
     <div class="container">
       <p class="label">The Workshop</p>
       <h1>A container for the poems you've been avoiding.</h1>
