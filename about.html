@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About &middot; The Workshop</title>
+<title>About &middot; The Poet&rsquo;s Workshop</title>
 <meta name="description" content="About the workshop, the poets, and the road from page to stage.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,10 +100,13 @@
   .top-nav .wordmark {
     font-family: 'EB Garamond', serif;
     font-style: italic;
-    font-size: 14px;
-    letter-spacing: 0.22em;
+    font-size: 18px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--taupe);
+  }
+  @media (max-width: 520px) {
+    .top-nav .wordmark { font-size: 13px; letter-spacing: 0.14em; }
   }
   .top-nav .wordmark:hover { color: var(--cream); opacity: 1; }
   .top-nav .nav-right {
@@ -174,10 +177,10 @@
   .header .label {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 0.35em;
     text-transform: uppercase;
-    color: var(--taupe-dim);
+    color: var(--taupe);
     margin-bottom: 32px;
   }
   .header h1 {
@@ -414,7 +417,7 @@
 
 <!-- NAV -->
 <nav class="top-nav">
-  <a href="/" class="wordmark">The Workshop</a>
+  <a href="/" class="wordmark">The Poet&rsquo;s Workshop</a>
   <div class="nav-right">
     <a href="about.html" class="nav-link">About</a>
     <a href="faq.html" class="nav-link">FAQ</a>
@@ -427,7 +430,7 @@
   <header class="header">
     <div class="header-ring" aria-hidden="true"></div>
     <div class="container">
-      <p class="label">The Workshop</p>
+      <p class="label">The Poet&rsquo;s Workshop</p>
       <h1>A container for the poems you've been avoiding.</h1>
     </div>
   </header>
